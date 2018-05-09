@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <lang="en-us">
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RPS Multiplayer</title>
+        <!-- Added link to the bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron col-md-12 header">
+                <h1>RPS Multiplayer</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron col-md-3 col-sm-3">
+                <div class="panel panel-primary">
+                    <h3 class="panel-title">Player 1</h3>
+                </div>
+            </div>
+            <div class="jumbotron col-md-6 col-sm-6">
+                <div class="panel panel-primary">
+                    <h3 class="panel-title">Battle Ground</h3>
+                    <img src ="assets/images/r.png" alt ="rps.png">
+                    <img src ="assets/images/p.png" alt ="rps.png">
+                    <img src ="assets/images/s.png" alt ="rps.png">
+                </div>
+            </div>
+            <div class="jumbotron col-md-3 col-sm-3">
+                <div class="panel panel-primary">
+                    <h3 class="panel-title">Player 2</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" >
+            <!-- <div class="jumbotron panel-heading col-md-12 col-sm-12">
+                <h3 class="panel-title"></h3>
+            </div> -->
+            <div class="jumbotron col-md-12 col-sm-12" id ="trainform" >
+                <form class="jumbotron col-md-12 col-sm-12" id="addTrain-form">
+                    <div class="form-group">
+                        <label for="name-input">You Name:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+               </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer ">copyright kittykuma.com</footer>
+
+    <!--make sure to put javascript on the bottom to alter the DOM, otherwise DOM not defined, can't alter DOM content with js method or function-->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="assets/javascript/rpsApp.js"></script>
+
+</body>
+
+</html>
